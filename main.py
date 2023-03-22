@@ -12,7 +12,9 @@ def text_reply(msg):
         return "Hello, how are you?"
     elif match2:
         conditions = getInfo.getWeatherInfo()
-        res = f"你好，今天是{conditions[0]}，{conditions[1]}天气为{conditions[2]}, 平均气温为{conditions[3]}"
+        dateArray = conditions[0].split('-')
+        res = f"你好吖，今天是{dateArray[0]}年{dateArray[1]}月{dateArray[2]}日。\n{conditions[1]}天气为{conditions[2]}, 平均气温为{conditions[3]}°C。" \
+              f"\n今天也要多多加油哦！"
         return res
 
 
