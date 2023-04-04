@@ -21,7 +21,7 @@ def getWeatherInfo():
     api_key = "fcc4f3d9e7cf1d5b39ca4626ff604359"
 
     # 填入你想查询的城市名
-    city = getCityCode("景德镇市")
+    city = getCityCode("南昌市")
     extensions = 'all'
 
     # 构造 API 请求 URL
